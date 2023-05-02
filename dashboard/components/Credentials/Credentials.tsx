@@ -19,9 +19,9 @@ export default function Credentials() {
       <Modal.Content>
         <Modal.Title id="credentials-title">Enter credentials</Modal.Title>
         <Modal.Description>
-          To visualize your analytics data in the pre-built dashboard, you need
-          to specify a token with read access to the pipes, and your workspace
-          Host.
+          Para visualizar seus dados analíticos no painel pré-criado, você precisa
+          para especificar um token com acesso de leitura aos pipes e seu espaço de trabalho
+          Hospedar.
         </Modal.Description>
         <CredentialsForm />
       </Modal.Content>
