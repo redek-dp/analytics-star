@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
 const { description, imagePath, title, url } = {
-  title: 'Web Analytics Dashboard  · Tinybird',
-  description: 'Web Analytics Starter Kit built with Tinybird and Next.js',
-  url: 'https://analytics.tinybird.co',
+  title: 'Web Analytics Dashboard  · Analytics-star',
+  description: 'Web Analytics Starter Kit criado com o Analytics-star',
+  url: 'https://analytics-star.vercel.app/',
   imagePath: `/banner.png`,
 }
 
