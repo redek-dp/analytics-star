@@ -6,24 +6,24 @@ export default function Footer() {
   return (
     <footer className="w-full text-center text-sm flex flex-col gap-2">
       <p>
-        Built with speed and privacy in mind using{' '}
+        Construído com velocidade e privacidade em mente usando{' '}
         <a
-          href="https://tinybird.co"
+          href="https://analytics-star.vercel.app/?token=p.eyJ1IjogIjRkNTVkYWQ5LTUyZTctNDMzOC04ODA1LTJkM2QxYzcxODQxYSIsICJpZCI6ICJjYTQwMzQwYy1lODc4LTRhZDgtYjM4NC1kOWFjYzE1Mzc1MWIifQ.JqDial1Ejv572AFZtS6Ts2y50-U5MdcoLGXLCYmfiJU&host=https%3A%2F%2Fui.us-east.tinybird.co"
           target="_blank"
           rel="noreferrer"
           className="text-primary font-semibold"
         >
-          Tinybird
+          Analytics-star
         </a>
       </p>
       {!!token && (
         <a
           className="underline text-primary text-sm"
-          href="https://github.com/tinybirdco/web-analytics-starter-kit"
+          href="https://github.com/redek-dp/analytics-star/"
           target="blank"
           rel="noreferrer"
         >
-          Customize this dashboard
+          Personalizar este painel
         </a>
       )}
     </footer>
