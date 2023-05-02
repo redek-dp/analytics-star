@@ -99,12 +99,12 @@ function WidgetWarning({ children }: { children: ReactNode }) {
         <h3 className="text-secondary font-semibold">{children}</h3>
         <div className="text-neutral-64 text-sm">
           <p>
-            {`Check that the original datasource columns and pipe names match the ones from the original data project `}
+            {`Verifique se as colunas originais da fonte de dados e os nomes dos canais correspondem aos do projeto de dados original `}
             <a
-              href="https://github.com/tinybirdco/web-analytics-starter-kit/tinybird"
+              href="https://github.com/redek-dp/analytics-star/"
               className="underline underline-offset-2"
             >
-              https://github.com/tinybirdco/web-analytics-starter-kit/tinybird
+              https://github.com/redek-dp/analytics-star/
             </a>
           </p>
         </div>
