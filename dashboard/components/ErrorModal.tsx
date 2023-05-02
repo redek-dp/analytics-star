@@ -49,7 +49,7 @@ export default function ErrorModal() {
         </Modal.Title>
         <div className="my-8">
           <Modal.Description>
-            {`Vá para`}
+            {`Go to`}
             <a
               href="https://docs.tinybird.co/api-reference/api-reference.html#authentication"
               className="underline underline-offset-2"
@@ -58,7 +58,7 @@ export default function ErrorModal() {
             >
               https://docs.tinybird.co/api-reference/api-reference.html#authentication
             </a>
-            {` para obter dicas sobre como corrigir esse problema.`}
+            {` for tips about how to fix this problem.`}
           </Modal.Description>
         </div>
         <div className="flex justify-end">
