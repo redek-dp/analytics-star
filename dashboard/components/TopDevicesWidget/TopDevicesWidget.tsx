@@ -10,7 +10,7 @@ export default function TopDevicesWidget() {
 
   return (
     <Widget>
-      <Widget.Title>Top Devices</Widget.Title>
+      <Widget.Title>Principais dispositivos</Widget.Title>
       <Widget.Content
         status={status}
         noData={!data?.data?.length}
