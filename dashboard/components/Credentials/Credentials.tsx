@@ -17,7 +17,7 @@ export default function Credentials() {
   return (
     <Modal isOpen={isOpen} onClose={() => undefined}>
       <Modal.Content>
-        <Modal.Title id="credentials-title">Enter credentials</Modal.Title>
+        <Modal.Title id="credentials-title">Insira as credenciais</Modal.Title>
         <Modal.Description>
           Para visualizar seus dados analíticos no painel pré-criado, você precisa
           para especificar um token com acesso de leitura aos pipes e seu espaço de trabalho
