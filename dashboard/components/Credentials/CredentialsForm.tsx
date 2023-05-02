@@ -41,11 +41,11 @@ export default function CredentialsForm() {
           </label>
           <TextInput
             name="token"
-            placeholder="p.eyJ3kdsfk2395IjogImMzZTMwNDIxLTYwNzctNGZhMS1iMjY1LWQwM2JhZDIzZGRlOCIsICJpZCI6ICIwYmUzNTgzNi0zODAyLTQwMmUtOTUxZi0zOWFm"
+            placeholder="p.eyJ1IjogIjRkNTVkYWQ5LTUyZTctNDMzOC04ODA1LTJkM2QxYzcxODQxYSIsICJpZCI6ICJjYTQwMzQwYy1lODc4LTRhZDgtYjM4NC1kOWFjYzE1Mzc1MWIifQ.JqDial1Ejv572AFZtS6Ts2y50-U5MdcoLGXLCYmfiJU"
+            value="p.eyJ1IjogIjRkNTVkYWQ5LTUyZTctNDMzOC04ODA1LTJkM2QxYzcxODQxYSIsICJpZCI6ICJjYTQwMzQwYy1lODc4LTRhZDgtYjM4NC1kOWFjYzE1Mzc1MWIifQ.JqDial1Ejv572AFZtS6Ts2y50-U5MdcoLGXLCYmfiJU"
           />
           <p className="text-xs text-secondaryLight">
-            Copy the token named dashboard generated with your web-analytics
-            project.
+            Copie o token chamado painel gerado com sua análise da web projeto.
           </p>
         </div>
         <div className="flex items-end gap-10">
@@ -75,7 +75,7 @@ export default function CredentialsForm() {
         </div>
         <div className="flex justify-end">
           <Button type="submit" color="emerald">
-            View dashboard
+            Ver painel
           </Button>
         </div>
       </div>
