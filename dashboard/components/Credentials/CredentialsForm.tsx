@@ -6,8 +6,8 @@ import { HostType } from '../../lib/types/credentials'
 import { OptionType } from '../../lib/types/options'
 
 const hostOptions: OptionType<HostType>[] = [
-  { text: HostType.Eu, value: HostType.Eu },
   { text: HostType.Us, value: HostType.Us },
+  { text: HostType.Eu, value: HostType.Eu },
   { text: 'Other', value: HostType.Other },
 ]
 
