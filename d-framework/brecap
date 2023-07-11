@@ -1,0 +1,2 @@
+/*link = document.location.href;
+var urlql = (link.split('?=').pop());*/

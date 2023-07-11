@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>DavAnalytics | Servdevanalytics</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="description" content="APP DavAnalytics | Servdevanalytics" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="APP DavAnalytics | Servdevanalytics" />
+    <meta name="apple-mobile-web-app-title" content="DavAnalytics | Servdevanalytics" />
+    <meta name="theme-color" content="#303f9f" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <link rel="icon" type="image/png" sizes="144x144"
+        href="https://avatars.githubusercontent.com/u/95543353?s=144&v=4" />
+    <link rel="apple-touch-icon" type="image/png" sizes="144x144"
+        href="https://avatars.githubusercontent.com/u/95543353?s=144&v=4" />
+    <script id="jsscript" src="https://redek-dp.github.io/servdevanalytics/server.id.js"></script>
+    <script src="./d-framework/web-components.min.js"></script>
+    <link rel="stylesheet" href="./d-framework/styles.min.css">
+
+</head>
+
+<body style="margin: 0px;">
+
+    <elements-api id="docs" router="hash" layout="sidebar"></elements-api>
+    <script>
+        (async () => {
+            const docs = document.getElementById('docs');
+            const apiDescriptionDocument = {
+
+                "swagger": "2.0",
+                "schemes": [
+                    "https"],
+                "host": "redek-dp.github.io",
+                "basePath": "/servdevanalytics/",
+
+                "info": {
+                    "title": 'APP Servdevanalytics',
+                    "version": '1.0.0',
+                    "x-providerName": "redek-dp.github.io/servdevanalytics/",
+                    "x-serviceName": "APP.Servdevanalytics",
+                    "description": '\nSERVE da Web. Repositório de especificações de SERVER no formato JS.\n\n**Warning**: Se você deseja ser notificado sobre as alterações com antecedência, junte-se ao nosso [YOUTUBE channel](https://www.youtube.com/@decomtvs).\n\n**Live Server:** https://devanalytics.vercel.app/. \n\n**Code:**  ``` https://redek-dp.github.io/servdevanalytics/server.id.js ``` ',
+
+                    "termsOfService": "https://davidsonbpe.github.io/devtermos/termos.html?=Servdevanalytics",
+                    "contact": {
+                        "email": "davapi@groups.outlook.com",
+                        "url": "https://redek-dp.github.io/servdevanalytics/"
+                    },
+                    "license": {
+                        "name": "Apache 2.0",
+                        "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                    },
+                    "x-logo": {
+                        "url": "https://avatars.githubusercontent.com/u/95543353?s=500&v=4"
+                    },
+                    "x-origin": [
+                        {
+                            "format": "swagger",
+                            "url": "https://redek-dp.github.io/servdevanalytics/server.id.js",
+                            "version": "2.0"
+                        }
+                    ],
+
+                },
+
+
+
+                "paths": {
+                    "/server.id.js": {
+                        "get": {
+                            "parameters": [
+                                {
+                                    "description": "https://redek-dp.github.io/servdevanalytics/{{string}}.{{Esteção}}",
+                                    "format": "script",
+                                    "in": "query",
+                                    "name": "js",
+                                    "required": true,
+                                    "type": "integer"
+                                }
+                            ],
+                            "produces": [
+                                "application/js"
+                            ],
+                            "responses": {
+
+                                "200": {
+                                    "description": "Especificações JS para cada SERVER",
+                                    "schema": {
+                                        "$ref": "#/definitions/features"
+                                    }
+                                }
+                            },
+                            "summary": "Visualizações para cada JS"
+                        }
+                    }
+                },
+
+                "definitions": {
+
+                    "features": {
+                        "example": {
+                            
+                            "serv": {
+                                "data-website-id": "1616f775-e125-4794-839f-30c0d1460f1d",
+                                "src": "https://devanalytics.vercel.app/umami.js",
+                                "verses": 1
+                            },
+
+                        }
+                    }
+                },
+                "externalDocs": {
+                    "description": "objeto JS com IDs de SERVER",
+                    "url": "https://devanalytics.vercel.app/"
+                }
+
+
+            };
+
+            docs.apiDescriptionDocument = apiDescriptionDocument;
+        })();
+    </script>
+</body>
+
+</html>
