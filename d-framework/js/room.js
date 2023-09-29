@@ -211,7 +211,8 @@ new Vue({
 function enviar() {
     var valor = document.getElementById("textinput").value;
     //alert("Você digitou: " + valor);
-    window.open("https://redek-dp.github.io/analytics-star/#api=" + valor, "_blank",);
+    //window.open("https://redek-dp.github.io/analytics-star/#api=" + valor, "_blank",);
+    window.open("https://analyticstar.pages.dev/#api=" + valor, "_blank",);
 }
 
 function share(button) {
@@ -219,8 +220,8 @@ function share(button) {
 
         navigator.share({
             title: "Analytics Star",
-            text: "APP DavAnalytics Servdevanalytics",
-            url: "https://redek-dp.github.io/analytics-star/"
+            text: "Analytics Star Aplicativo Analytics Virtual! by davidsonbpe",
+            url: "https://analyticstar.pages.dev/"
         });
     } else {
         if (!clickedOnShare) {
