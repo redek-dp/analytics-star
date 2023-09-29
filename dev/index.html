@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Site | Developer</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Site Developer" />
+	<meta property="og:title" content="Site Developer" />
+	<meta property="og:locale" content="pt-br" />
+	<meta property="og:site_name" content="Site Developer" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="application-name" content="Site Developer" />
+	<meta name="apple-mobile-web-app-title" content="Site Developer" />
+	<meta name="theme-color" content="#f8f9fa" />
+	<meta name="msapplication-navbutton-color" content="#f8f9fa" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="icon" type="image/png" sizes="144x144" href="../dev/favicon.png" />
+	<link rel="apple-touch-icon" type="image/png" sizes="144x144" href="../dev/favicon.png" />
+	<script src="../d-framework/js/pace.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://redek-dp.github.io/servdevanalytics/server.id.js"></script>
+	<link rel="manifest" href="../manifest.json" />
+
+	<style>
+		html body {
+			width: 100%;
+			height: 100%;
+			padding: 0px;
+			margin: 0px;
+			overflow: hidden;
+			font-family: arial;
+			font-size: 10px;
+			color: #6e6e6e;
+			background-color: #000;
+		}
+
+		#preview-frame {
+			width: 100%;
+			background-color: #fff;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<iframe id="preview-frame" src="https://dav7.pages.dev/" name="preview-frame" frameborder="0"
+		noresize="noresize"></iframe>
+
+
+	<script>
+
+		var calcHeight = function () {
+			$("#preview-frame").height($(window).height());
+		};
+
+		$(document).ready(function () {
+			calcHeight();
+		});
+
+		$(window)
+			.resize(function () {
+				calcHeight();
+			})
+			.load(function () {
+				calcHeight();
+			});
+
+
+		//link = document.location.href;
+		// ?url=https://davidsonbpe.blogspot.com/
+		//var urlql = (link.split('?url=').pop());
+		//window.location.href = "https://" + urlql + "";
+	</script>
+
+	<script src="../d-framework/js/register-sw.js"></script>
+</body>
+
+</html>

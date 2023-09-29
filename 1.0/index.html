@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>DavAnalytics | Servdevanalytics</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="description" content="APP DavAnalytics | Servdevanalytics" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="APP DavAnalytics | Servdevanalytics" />
+    <meta name="apple-mobile-web-app-title" content="DavAnalytics | Servdevanalytics" />
+    <meta name="theme-color" content="#303f9f" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <link rel="icon" type="image/png" sizes="144x144"
+        href="https://avatars.githubusercontent.com/u/95543353?s=144&v=4" />
+    <link rel="apple-touch-icon" type="image/png" sizes="144x144"
+        href="https://avatars.githubusercontent.com/u/95543353?s=144&v=4" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <script src="./d-framework/web-com.min.js"></script>
+    <script src="https://redek-dp.github.io/analytics-star/v1/app.id.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top bg-dark rounded-0 shadow mb-3" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasmenu"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand pt-3 pb-3">analytics <i class="bi bi-bookmark-star"></i> star</a>
+            <button id="shareButton" onclick="share(this)" type="button" class="btn btn-dark"><i
+                    class="bi bi-share"></i></button>
+        </div>
+    </nav>
+
+    <!-- MENU -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasmenu" aria-labelledby="offcanvasmenuLabel"
+        style="width: 280px;" data-bs-theme="dark">
+        <div class="offcanvas-header  shadow">
+            <h2 class="offcanvas-title" id="offcanvasmenuLabel"><i class="bi bi-code-square"></i> SOBRE</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div>
+                ❝ Aplicativos para várias plataformas by Developer Davidsonbpe.❞
+            </div>
+            <hr>
+            <div class="d-grid gap-2">
+                <button
+                    onclick="javascript:window.open('https://github.com/davidsonbpe', 'GitHub', 'width=800,height=550')"
+                    class="mt-1 btn btn-secondary rounded-0 text-start fs-5" type="button">
+                    <i class="bi bi-justify-left float-start pe-3"></i> GitHub
+                </button>
+                <button
+                    onclick="javascript:window.open('https://codepen.io/davidsonbpe', 'codepen', 'width=800,height=550')"
+                    class="mt-1 btn btn-secondary rounded-0 text-start fs-5" type="button">
+                    <i class="bi bi-justify-left float-start pe-3"></i> CodePen
+                </button>
+                <button
+                    onclick="javascript:window.open('https://davidsonbpe.blogspot.com/', 'davidsonbpe', 'width=800,height=550')"
+                    class="mt-1 btn btn-secondary rounded-0 text-start fs-5" type="button">
+                    <i class="bi bi-justify-left float-start pe-3"></i> Developer
+                </button>
+                <button id="shareButton" onclick="share(this)" class="mt-1 btn btn-secondary rounded-0 text-start fs-5"
+                    type="button">
+                    <i class="bi bi-justify-left float-start pe-3"></i> Compartilhar
+                </button>
+            </div>
+        </div>
+
+        <div class="offcanvas-header border-top">
+            <h2 class="offcanvas-title" id="offcanvasmenuLabel"></h2>
+            <button type="button" class="btn btn-secondary rounded-0 fs-5 ps-4 pe-4"
+                data-bs-dismiss="offcanvas">Sair</button>
+        </div>
+    </div>
+    <!-- MENU -->
+    <div style="padding-top: 50px;"></div>
+
+    <div class="container">
+
+        <ul class="list-group list-group-flush">
+            <a href="https://analytics-star.vercel.app/?token=p.eyJ1IjogImFjOGRiN2I1LWZiMmUtNDQ1NS05NjA5LTM0ZGI0YjU5YWFhNyIsICJpZCI6ICI4ZWNlMmNjYy1jNmNlLTRkNzktYTBkZS1jZGY0Yzg1NDQwNDgifQ.1suExc_c-7OowRiV7C7w18mvEeZI6W_I69tjpXbVH_M&host=https://api.us-east.tinybird.co"
+                target="_blank" class="list-group-item list-group-item-action"><i class="bi bi-clipboard-data"></i>
+                analyticstar</a>
+            <a href="https://analytics-star.vercel.app/?token=p.eyJ1IjogIjRkNTVkYWQ5LTUyZTctNDMzOC04ODA1LTJkM2QxYzcxODQxYSIsICJpZCI6ICJjYTQwMzQwYy1lODc4LTRhZDgtYjM4NC1kOWFjYzE1Mzc1MWIifQ.JqDial1Ejv572AFZtS6Ts2y50-U5MdcoLGXLCYmfiJU&host=https%3A%2F%2Fui.us-east.tinybird.co"
+                target="_blank" class="list-group-item list-group-item-action"><i class="bi bi-clipboard-data"></i>
+                devweb</a>
+        </ul>
+
+        <div class="card mt-5 rounded-0">
+            <div class="card-body">
+                <code>
+                &lt;script src="https://redek-dp.github.io/analytics-star/v1/app.id.js"&gt;&lt;/script&gt;
+            </code>
+            </div>
+        </div>
+
+        <div class="card mt-1 rounded-0">
+            <div class="card-body">
+                <code>
+                &lt;script src="https://redek-dp.github.io/analytics-star/v1/hinariobook.id.js"&gt;&lt;/script&gt;
+            </code>
+            </div>
+        </div>
+
+        <div class="card mt-1 rounded-0">
+            <div class="card-body">
+                <code>
+                &lt;script src="https://redek-dp.github.io/analytics-star/v1/sagradbook.id.js"&gt;&lt;/script&gt;
+            </code>
+            </div>
+        </div>
+
+        <div class="card mt-1 rounded-0">
+            <div class="card-body">
+                <code>
+                &lt;script src="https://redek-dp.github.io/analytics-star/v1/server.id.js"&gt;&lt;/script&gt;
+            </code>
+            </div>
+        </div>
+
+        <div class="card mt-1 rounded-0">
+            <div class="card-body">
+                <code>
+                &lt;script src="https://redek-dp.github.io/analytics-star/v1/sites.id.js"&gt;&lt;/script&gt;
+            </code>
+            </div>
+        </div>
+
+        <div class="card mt-1 rounded-0">
+            <div class="card-body">
+                <code>
+                &lt;script src="https://redek-dp.github.io/analytics-star/v1/web.id.js"&gt;&lt;/script&gt;
+            </code>
+            </div>
+        </div>
+
+    </div>
+    <div style="padding-top: 50px;"></div>
+</body>
+
+</html>
