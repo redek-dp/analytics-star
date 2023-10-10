@@ -27,22 +27,7 @@ export default function KPIsWidget() {
   return (
     <Widget>
       <Widget.Title isVisuallyHidden>KPIs</Widget.Title>
-      <KPIsTabs value={kpi} onChange={setKpi} totals={kpiTotals} />
-      <Widget.Content
-        status={status}
-        noData={!chartData?.length}
-        warning={warning?.message}
-        className="pt-2 mt-4"
-      >
-        <AreaChart
-          data={chartData}
-          index="date"
-          categories={[kpiOption.label]}
-          colors={['blue']}
-          valueFormatter={kpiOption.formatter}
-          showLegend={false}
-        />
-      </Widget.Content>
+   
     </Widget>
   )
 }
