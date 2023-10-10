@@ -1,5 +1,4 @@
 import { queryPipe } from '../api'
-import { KpisData, KpiTotals, KpiType } from '../types/kpis'
 import useDateFilter from './use-date-filter'
 import useQuery from './use-query'
 import { QueryError } from '../types/api'
@@ -9,24 +8,12 @@ async function getKpiTotals(
   date_to?: string
 ): Promise<KpiTotals> {
 
-  /**
-   * If we sent the same value for date_from and date_to, the result is one row per hour.
-   * 
-   * But we actually need one row per date, so we're sending one extra day in the filter,
-   * and removing ir afterwards.
-   * 
-   * Not the best approach, it'd be better to modify the kpis endpoint. But we don't want
-   * to break the backwards compatibility (breaking the dashboard for alreayd active users).
-   * 
-   */
+
   let date_to_aux = date_to ? new Date(date_to) : new Date();
   date_to_aux.setDate(date_to_aux.getDate() + 1);
   const date_to_aux_str = date_to_aux.toISOString().substring(0,10);
 
-  const { data } = await queryPipe<KpisData>('kpis', {
-    date_from,
-    date_to: date_to_aux_str
-  })
+ 
 
   const queryData = data.filter(record => record['date'] != date_to_aux_str);
 
