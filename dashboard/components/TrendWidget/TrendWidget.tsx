@@ -1,5 +1,5 @@
 import { BarChart } from '@tremor/react'
-import Widget from '../Widget'
+
 import useTrend from '../../lib/hooks/use-trend'
 import { useMemo } from 'react'
 import moment from 'moment'
@@ -15,9 +15,5 @@ export default function TrendWidget() {
     [data]
   )
 
-  return (
-    <Widget>
-      
-    </Widget>
-  )
+
 }
