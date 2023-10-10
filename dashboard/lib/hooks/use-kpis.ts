@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import moment from 'moment'
 
 import { queryPipe } from '../api'
+import { KpisData, KpiType, isKpi, KPI_OPTIONS } from '../types/kpis'
 import useDateFilter from './use-date-filter'
 import useQuery from './use-query'
 import { ChartValue } from '../types/charts'
@@ -14,7 +15,10 @@ const arrayHasCurrentDate = (dates: string[], isHourlyGranularity: boolean) => {
 }
 
 async function getKpis(kpi: KpiType, date_from?: string, date_to?: string) {
- 
+  const { data: queryData } = await queryPipe<KpisData>('kpis', {
+    date_from,
+    date_to,
+  })
   const isHourlyGranularity = !!date_from && !!date_to && date_from === date_to
   const dates = queryData.map(({ date }) =>
     moment(date).format(isHourlyGranularity ? 'HH:mm' : 'MMM DD, YYYY')
@@ -52,6 +56,7 @@ export default function useKpis() {
   const { kpi: kpiParam } = router.query
   const kpi = isKpi(kpiParam) ? kpiParam : 'visits'
   const kpiOption = KPI_OPTIONS.find(({ value }) => value === kpi)!
+  const query = useQuery([kpi, startDate, endDate, 'kpis'], getKpis)
 
   const setKpi = (kpi: KpiType) => {
     const searchParams = new URLSearchParams(window.location.search)
