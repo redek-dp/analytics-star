@@ -38,7 +38,7 @@ export type KpiOption = {
 }
 
 export const KPI_OPTIONS: KpiOption[] = [
-  {
+  /*{
     label: 'unique visitors',
     value: 'visits',
     tooltip: 'visits',
@@ -61,5 +61,5 @@ export const KPI_OPTIONS: KpiOption[] = [
     value: 'bounce_rate',
     tooltip: 'bounce rate',
     formatter: formatPercentage,
-  },
+  },*/
 ]
