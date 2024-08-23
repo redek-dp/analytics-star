@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Analytics Star | HOME</title>
+    <title>ANALYTICS STAR | HOME</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Analytics Star Aplicativo Analytics Virtual! by davidsonbpe" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="Analytics Star" />
-    <meta name="apple-mobile-web-app-title" content="Analytics Star" />
+    <meta name="application-name" content="ANALYTICS STAR" />
+    <meta name="apple-mobile-web-app-title" content="ANALYTICS STAR" />
     <meta name="theme-color" content="#198754" />
     <meta name="msapplication-navbutton-color" content="#198754" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -38,6 +38,17 @@
 
 
     <style>
+        .boxdbshadow {
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28) !important;
+        }
+
+        .bg-hover:hover,
+        .bg-hover:focus,
+        .bg-hover:active,
+        .bg-hover:target {
+            opacity: 0.45 !important;
+        }
+
         .taimgk {
             /*padding-left: 10px;*/
             vertical-align: bottom;
@@ -50,7 +61,6 @@
 </head>
 
 <body>
-
 
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -73,7 +83,7 @@
         </symbol>
     </svg>
 
-    <nav class="navbar sticky-top rounded-0 shadow bg-success" data-bs-theme="dark">
+    <!--<nav class="navbar sticky-top rounded-0 shadow bg-success" data-bs-theme="dark">
         <div class="container-fluid">
             <button class="navbar-toggler border-0" type="button" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasmenu" aria-controls="offcanvasmenu">
@@ -136,7 +146,7 @@
         </div>
     </nav>
 
-    <!-- MENU -->
+    !-- MENU --
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasmenu" aria-labelledby="offcanvasmenuLabel"
         style="width: 280px;">
         <div class="offcanvas-header shadow bg-success" data-bs-theme="dark" style="height: 62px;">
@@ -192,7 +202,93 @@
                 data-bs-dismiss="offcanvas">Sair</button>
         </div>
     </div>
+    !-- MENU -->
+
+
+
+
     <!-- MENU -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasmenu" aria-labelledby="offcanvasmenuLabel"
+        style="width: 280px;" data-bs-theme="dark">
+        <div class="offcanvas-header shadow bg-body-tertiary">
+            <h5 class="offcanvas-title" id="offcanvasmenuLabel"><i class="bi bi-columns-gap pe-3"></i> MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="fw-light fs-6 text-uppercase">
+                ❝ Aplicativos para várias plataformas by Developer Davidsonbpe.❞
+            </div>
+            <hr>
+            <div class="d-grid gap-2">
+                <a href="./" class="mt-1 btn btn-secondary rounded-0 text-start fs-6 text-uppercase opacity-75"
+                    type="button">
+                    <i class="bi bi-house-door-fill float-start pe-3"></i> Home
+                </a>
+
+                <a href="./live/" class="mt-1 btn btn-secondary rounded-0 text-start fs-6 text-uppercase opacity-75"
+                    type="button">
+                    <i class="bi bi-justify-left float-start pe-3"></i> Analytics LIVE
+                </a>
+                <button onclick="javascript:window.open('https://github.com/davidsonbpe')"
+                    class="mt-1 btn btn-secondary rounded-0 text-start fs-6 text-uppercase opacity-75" type="button">
+                    <i class="bi bi-justify-left float-start pe-3"></i> GitHub
+                </button>
+                <button onclick="javascript:window.open('https://codepen.io/davidsonbpe')"
+                    class="mt-1 btn btn-secondary rounded-0 text-start fs-6 text-uppercase opacity-75" type="button">
+                    <i class="bi bi-justify-left float-start pe-3"></i> CodePen
+                </button>
+                <button onclick="javascript:window.open('https://pag.ae/7Y3uUnhg8')"
+                    class="mt-1 btn btn-secondary rounded-0 text-start fs-6 text-uppercase opacity-75" type="button">
+                    <i class="bi bi-justify-left float-start pe-3"></i> Doar com
+                </button>
+                <button onclick="javascript:window.open('https://davidsonbpe.blogspot.com/')"
+                    class="mt-1 btn btn-secondary rounded-0 text-start fs-6 text-uppercase opacity-75" type="button">
+                    <i class="bi bi-justify-left float-start pe-3"></i> Developer
+                </button>
+                <button onclick="sharesbutton();"
+                    class="mt-1 btn btn-secondary rounded-0 text-start fs-6 text-uppercase opacity-75" type="button">
+                    <i class="bi bi-justify-left float-start pe-3"></i> Compartilhar
+                </button>
+            </div>
+        </div>
+
+        <div class="p-2 border-top">
+            <button type="button" class="btn btn-secondary rounded-0 fs-6 ps-4 pe-4 text-uppercase float-end opacity-75"
+                data-bs-dismiss="offcanvas">Sair</button>
+        </div>
+    </div>
+    <!-- MENU -->
+
+    <div id="home" class="d-flex position-fixed z-3 w-100 boxdbshadow" data-bs-theme="dark">
+
+        <img type="button" title="MENU" data-bs-toggle="offcanvas" data-bs-target="#offcanvasmenu"
+            aria-controls="offcanvasmenu" src="./d-framework/icon/144/favicon.png"
+            class="img-thumbnail rounded-0 border-0 p-0 bg-hover bg-danger" width="56" height="50" />
+
+        <div class="form-floating flex-grow-1 rounded-0 border-0 text-uppercase">
+            <select type="button" title="Menu select" class="form-select rounded-0 border-0 border-end text-uppercase"
+                id="mySelects" aria-label="Floating label select example">
+                <option selected value="javascript:location.reload();">ANALYTICS STAR HOME</option>
+                <option value="javascript:sharesbutton();">Compartilhar</option>
+                <option value="javascript:window.open('https://dpripol.pages.dev/?=ANALYTICS STAR');">PRIVACY
+                    POLICY</option>
+                <option value="javascript:window.open('https://pag.ae/7Y3uUnhg8');">DOAR COM</option>
+
+            </select>
+            <label class="d-inline-block text-truncate w-100" for="floatingSelect">ANALYTICS STAR</label>
+        </div>
+
+
+        <button data-bs-toggle="modal" data-bs-target="#mexclaModal" title="CDN ANALYTICS"
+            class="btn btn-dark rounded-0 text-warning fs-4 px-3 border-end" type="button">
+            <i class="bi bi-gear opacity-75"></i>
+        </button>
+
+
+    </div>
+
+    <div style="padding-top: 58px;"></div>
 
 
 
@@ -201,7 +297,7 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header rounded-0">
-                    <h1 class="modal-title fs-5" id="mexclaModalLabel">CDN Analytics</h1>
+                    <h1 class="modal-title fs-5" id="mexclaModalLabel">CDN ANALYTICS</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -254,18 +350,6 @@
                         </div>
                     </div>
 
-
-                    <ul class="list-group list-group-flush">
-                        <a href="https://analytics-star.vercel.app/?token=p.eyJ1IjogImFjOGRiN2I1LWZiMmUtNDQ1NS05NjA5LTM0ZGI0YjU5YWFhNyIsICJpZCI6ICI4ZWNlMmNjYy1jNmNlLTRkNzktYTBkZS1jZGY0Yzg1NDQwNDgifQ.1suExc_c-7OowRiV7C7w18mvEeZI6W_I69tjpXbVH_M&host=https://api.us-east.tinybird.co"
-                            target="_blank" class="list-group-item list-group-item-action"><i
-                                class="bi bi-clipboard-data"></i>
-                            analyticstar</a>
-                        <a href="https://analytics-star.vercel.app/?token=p.eyJ1IjogIjRkNTVkYWQ5LTUyZTctNDMzOC04ODA1LTJkM2QxYzcxODQxYSIsICJpZCI6ICJjYTQwMzQwYy1lODc4LTRhZDgtYjM4NC1kOWFjYzE1Mzc1MWIifQ.JqDial1Ejv572AFZtS6Ts2y50-U5MdcoLGXLCYmfiJU&host=https%3A%2F%2Fui.us-east.tinybird.co"
-                            target="_blank" class="list-group-item list-group-item-action"><i
-                                class="bi bi-clipboard-data"></i>
-                            devweb</a>
-                    </ul>
-
                 </div>
 
 
@@ -297,7 +381,8 @@
 
     <div class="container pt-5" id="top_devices">
 
-        <button type="button" onclick="javascript:location.reload()" class="btn btn-outline-secondary float-end"><i class="bi bi-arrow-clockwise"></i></button>
+        <button type="button" onclick="javascript:location.reload()" class="btn btn-outline-secondary float-end"><i
+                class="bi bi-arrow-clockwise"></i></button>
 
         <h2 for="exampleFormControlInput1" class="form-label pt-3 pb-4"><i class="bi bi-graph-up"></i> Top Devices</h2>
 

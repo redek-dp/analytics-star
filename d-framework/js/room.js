@@ -215,18 +215,5 @@ function enviar() {
     window.open("https://analyticstar.pages.dev/#api=" + valor, "_blank",);
 }
 
-function share(button) {
-    if (navigator.share) {
 
-        navigator.share({
-            title: "Analytics Star",
-            text: "Analytics Star Aplicativo Analytics Virtual! by davidsonbpe",
-            url: "https://analyticstar.pages.dev/"
-        });
-    } else {
-        if (!clickedOnShare) {
-            clickedOnShare = true;
-            showLoading(button);
-        }
-    }
-}
+
