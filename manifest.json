@@ -1,14 +1,17 @@
 {
-    "name": "Analytics Star",
-    "short_name": "Analytics Star",
+    "name": "ANALYTICS STAR",
+    "short_name": "ANALYTICS STAR",
     "lang": "pt-BR",
-    "description": "Analytics Star Aplicativo Analytics Virtual! by davidsonbpe.",
+    "description": "ANALYTICS STAR APLICATIVO ANALYTICS VIRTUAL! BY DAVIDSONBPE",
     "theme_color": "#198754",
     "background_color": "#198754",
     "display": "standalone",
-    "start_url": "/?utm_source=Installed%20App&utm_medium=Shortcut",
+    "start_url": "/?Installe=analytics-star",
+    "id": "analytics-star",
+    "iarc_rating_id": "H888-H347-0k87-T870-8K99-5C99-9N8B-D1G5-2024",
     "dir": "auto",
     "display_override": [
+        "window-controls-overlay",
         "standalone"
     ],
     "categories": [
@@ -51,6 +54,14 @@
             "type": "image/png"
         }
     ],
+    "screenshots": [
+        {
+            "src": "./d-framework/icon/512/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "platform": "wide"
+        }
+    ],
     "shortcuts": [
         {
             "name": "Analytics Live",
@@ -76,6 +87,16 @@
             ]
         }
 
+    ],
+    "scope_extensions": [
+        {
+            "origin": "*.analyticstar.pages.dev"
+        }
+    ],
+    "web_apps": [
+        {
+            "web_app_identity": "https://analyticstar.pages.dev/"
+        }
     ],
     "prefer_related_applications": true,
     "protocol_handlers": [
