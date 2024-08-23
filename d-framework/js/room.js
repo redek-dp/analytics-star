@@ -206,8 +206,6 @@ new Vue({
 
 
 
-
-
 function enviar() {
     var valor = document.getElementById("textinput").value;
     //alert("Você digitou: " + valor);
@@ -250,3 +248,6 @@ function sharesbutton() {
     url: window.location.href
   });
 }
+
+var creditsyear = new Date();
+document.getElementById("datacedencer").innerHTML = creditsyear.getFullYear();
